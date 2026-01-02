@@ -1,43 +1,32 @@
-# Tushar Kardam Portfolio
+# Portfolio Website
 
-A modern, responsive, and advanced personal portfolio website built with Vite and pure CSS.
+This is a modern, dark-themed portfolio website featuring glassmorphism effects, smooth animations, and a sleek layout inspired by presentation decks.
 
 ## Features
-- **Modern Design**: Dark theme with glassmorphism effects and neon accents.
-- **Animations**: Smooth entrance animations and hover effects.
-- **Responsive**: Fully optimized for Desktops, Tablets, and Mobile devices.
-- **Performance**: High performance using standard web technologies without heavy frameworks.
+- **Hero Section**: Dynamic introduction with glowing background effects.
+- **Table of Contents**: Unique navigation cards.
+- **Profile**: Displays your photo, bio, education, and skills.
+- **Projects**: Highlights your work (Wanderlust, Weather API).
+- **Certificates**: Visual gallery of your certifications.
+- **Fully Responsive**: Works on mobile and desktop.
 
-## Tech Stack
-- **Build Tool**: Vite
-- **Structure**: HTML5
-- **Styling**: Vanilla CSS (Advanced properties, Variables, Flexbox/Grid)
-- **Logic**: Vanilla JavaScript
+## Setup & Customization
 
-## Project Structure
-- `index.html`: Main entry point containing the content and structure.
-- `src/style.css`: All styles including variables, animations, and media queries.
-- `src/main.js`: Interaction logic (Menu toggle, Scroll observer).
-- `public/profile.png`: Profile image asset.
+1.  **Images**:
+    -   Your images are stored in `assets/images/`.
+    -   `profile.jpg`: Your profile photo.
+    -   `resume.png`: Your resume file.
+    -   `cert_1.jpg`, `cert_2.jpg`, `cert_3.jpg`: Your certificates.
+    -   To update an image, simply replace the file in the folder with a new one of the same name.
 
-## How to Run
+2.  **Editing Text**:
+    -   Open `index.html` in any text editor.
+    -   Update the text content (Name, Bio, Projects, Contact info) as needed.
 
-1.  **Install Dependencies** (if not already installed):
-    ```bash
-    npm install
-    ```
+3.  **Running the Site**:
+    -   Simply double-click `index.html` to open it in your browser.
+    -   Or run a local server: `python -m http.server`
 
-2.  **Start Development Server**:
-    ```bash
-    npm run dev
-    ```
-
-3.  **Build for Production**:
-    ```bash
-    npm run build
-    ```
-    The output will be in the `dist` folder.
-
-## Customization
-- Update content in `index.html`.
-- Change colors in `src/style.css` under the `:root` variables.
+## Credits
+- Fonts: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Icons: [FontAwesome](https://fontawesome.com/)

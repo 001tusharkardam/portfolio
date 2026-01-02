@@ -1,276 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Tushar Kardam - Computer Science Engineer & Full Stack Developer" />
-  <title>Tushar Kardam | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
-    rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Kardam | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Tushar Kardam, Computer Science Engineering Student and Full Stack Developer.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="bg-animation">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </div>
 
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">TK.</a>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+    <!-- Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
 
-  <header id="home" class="hero-section">
-    <div class="container hero-container">
-      <div class="hero-text">
-        <span class="subheading">HELLO!</span>
-        <h1 class="name">I'm <span>Tushar Kardam</span></h1>
-        <h2 class="typing-text">I'm a <span class="type-target"></span></h2>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">MY WORKS</a>
-          <a href="#contact" class="btn btn-outline">CONTACT ME</a>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="/profile.png" alt="Tushar Kardam">
-      </div>
-    </div>
-  </header>
-
-  <section id="about" class="ftco-section about-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="heading" data-text="About Me">About Me</h2>
-        <p class="sub-heading">A small introduction about my self</p>
-      </div>
-      <div class="about-content">
-        <div class="about-img">
-          <!-- Using profile image again or a different one if available, using profile for now -->
-          <img src="/profile.png" alt="About Me">
-        </div>
-        <div class="about-details">
-          <p class="intro-text">
-            Enthusiastic and detail-oriented Computer Science Engineering student with a strong command of Java, Data
-            Structures & Algorithms, and Web Development.
-            Experienced in building real-world projects using modern technologies like React.js, APIs, and cloud
-            platforms.
-          </p>
-          <ul class="info-list">
-            <li><span>Name:</span> <span>Tushar Kardam</span></li>
-            <li><span>Date of birth:</span> <span>Aug 05, 2004</span></li>
-            <!-- Placeholder DOB, user can update -->
-            <li><span>Address:</span> <span>Meerut, India</span></li>
-            <li><span>Email:</span> <span>tusharkardam711@gmail.com</span></li>
-            <li><span>Phone:</span> <span>+91 9012066857</span></li>
-          </ul>
-          <div class="project-counter">
-            <!-- Placeholder for stats if desired, can be removed or kept simple -->
-            <div class="counter-item">
-              <span class="number">5+</span>
-              <span class="label">Projects Completed</span>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="subtitle fade-in">WELCOME TO MY WORLD</p>
+                <h1 class="title fade-in-delay-1">PORTFOLIO</h1>
+                <h2 class="name fade-in-delay-2">TUSHAR KARDAM</h2>
+                <div class="scroll-indicator fade-in-delay-3">
+                    <span>EXPLORE</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
             </div>
-          </div>
-          <div class="buttons">
-            <a href="#" class="btn btn-primary">Download CV</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <section id="skills" class="ftco-section skills-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="heading" data-text="My Skills">My Skills</h2>
-        <p class="sub-heading">My technical level</p>
-      </div>
-      <div class="skills-grid">
-        <!-- Java -->
-        <div class="skill-item">
-          <div class="skill-header">
-            <h3>Java</h3>
-            <span>90%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-          </div>
-        </div>
-        <!-- DSA -->
-        <div class="skill-item">
-          <div class="skill-header">
-            <h3>Data Structures & Algorithms</h3>
-            <span>85%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-          </div>
-        </div>
-        <!-- Web Development -->
-        <div class="skill-item">
-          <div class="skill-header">
-            <h3>Web Development (MERN)</h3>
-            <span>80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
-        </div>
-
-        <!-- SQL -->
-        <div class="skill-item">
-          <div class="skill-header">
-            <h3>SQL / Database</h3>
-            <span>85%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-          </div>
-        </div>
-        <!-- Git/Tools -->
-        <div class="skill-item">
-          <div class="skill-header">
-            <h3>Git & GitHub</h3>
-            <span>90%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="ftco-section projects-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="heading" data-text="Projects">Featured Projects</h2>
-        <p class="sub-heading">My recent work</p>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="/wanderlust.png" alt="Wanderlust Website">
-            <div class="overlay">
-              <div class="text">
-                <h3>Wanderlust Website</h3>
-                <span>Full Stack Web App</span>
-              </div>
+        <!-- Table of Contents (Nav) -->
+        <section id="toc" class="toc-section">
+            <div class="container">
+                <h2 class="section-title">TABLE OF CONTENT</h2>
+                <div class="toc-grid">
+                    <a href="#profile" class="toc-card card-1">
+                        <span class="number">01</span>
+                        <span class="label">PROFILE</span>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="#projects" class="toc-card card-2">
+                        <span class="number">02</span>
+                        <span class="label">PROJECTS</span>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="#certificates" class="toc-card card-3">
+                        <span class="number">03</span>
+                        <span class="label">CERTIFICATES</span>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                    <a href="#contact" class="toc-card card-4">
+                        <span class="number">04</span>
+                        <span class="label">CONTACT</span>
+                        <i class="fa-solid fa-arrow-right icon"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="project-info">
-            <h3><a href="#">Wanderlust Website</a></h3>
-            <p>Airbnb-inspired full-stack application with authentication and role-based access.</p>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="/weather.png" alt="Weather API App">
-            <div class="overlay">
-              <div class="text">
-                <h3>Weather API</h3>
-                <span>Web Application</span>
-              </div>
+        <!-- Profile Section -->
+        <section id="profile" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">PROFILE</h2>
+                </div>
+
+                <div class="profile-layout">
+                    <div class="profile-image-container">
+                        <img src="assets/images/profile.jpg" alt="Tushar Kardam" class="profile-img">
+                        <div class="img-border"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Computer Science Student</h3>
+                        <p class="bio">
+                            Enthusiastic and detail-oriented Computer Science Engineering student with a strong command
+                            of Java, Data Structures & Algorithms, and Web Development. Experienced in building
+                            real-world projects using modern technologies like React.js, APIs, and cloud platforms.
+                        </p>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Education</span>
+                                <span class="value">B.Tech CSE, IIMT University (2022-2026)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Focus</span>
+                                <span class="value">Full Stack Dev, Cloud Computing</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+
+                        <div class="actions">
+                            <a href="assets/images/resume.png" target="_blank" class="btn primary-btn">
+                                <i class="fa-solid fa-file-pdf"></i> View Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="project-info">
-            <h3><a href="#">Weather API App</a></h3>
-            <p>Real-time weather dashboard with dynamic city search and optimized API calls.</p>
-          </div>
-        </div>
+        </section>
 
-        <!-- Experience as a "Project" card for visual consistency if desired, or separate -->
-      </div>
-    </div>
-  </section>
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">PROJECTS</h2>
+                </div>
 
-  <section id="experience" class="ftco-section experience-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="heading" data-text="Experience">Experience</h2>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-item">
-          <div class="timeline-date">2024 - Present</div>
-          <div class="timeline-content">
-            <h3>Java Developer Intern</h3>
-            <span class="institute">Self-Driven Projects</span>
-            <p>Designed modular Java classes, practiced OOPs, and managed version control with Git.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2022 - 2026</div>
-          <div class="timeline-content">
-            <h3>B.Tech - CSE</h3>
-            <span class="institute">IIMT University, Meerut</span>
-            <p>Pursuing Bachelor of Technology in Computer Science Engineering.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>WANDERLUST</h3>
+                            <p class="project-desc">Running a full-stack web application inspired by Airbnb with
+                                end-to-end functionality. Implemented secure authentication & authorization using
+                                sessions/middleware.</p>
+                            <div class="tags">
+                                <span>Full Stack</span>
+                                <span>Authentication</span>
+                                <span>Web App</span>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
 
-  <section id="contact" class="ftco-section contact-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="heading" data-text="Contact">Get in Touch</h2>
-        <p class="sub-heading">Let's talk about your projects</p>
-      </div>
-      <div class="contact-row">
-        <div class="contact-box">
-          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-          <h3>Address</h3>
-          <p>Meerut, India</p>
-        </div>
-        <div class="contact-box">
-          <div class="icon"><i class="fas fa-phone"></i></div>
-          <h3>Contact Number</h3>
-          <p><a href="tel://9012066857">+91 9012066857</a></p>
-        </div>
-        <div class="contact-box">
-          <div class="icon"><i class="fas fa-paper-plane"></i></div>
-          <h3>Email Address</h3>
-          <p><a href="mailto:tusharkardam711@gmail.com">tusharkardam711@gmail.com</a></p>
-        </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>WEATHER API</h3>
+                            <p class="project-desc">Implemented dynamic city/location search with temperature, humidity,
+                                and wind speed display. Optimized API calls using environment variables.</p>
+                            <div class="tags">
+                                <span>API Integration</span>
+                                <span>Dynamic Search</span>
+                                <span>Optimization</span>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="contact-box social-box">
-          <div class="icon"><i class="fas fa-globe"></i></div>
-          <h3>Social Profiles</h3>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/tushar-kardam-b76a20250/" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/001tusharkardam" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Certificates Section -->
+        <section id="certificates" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">CERTIFICATES</h2>
+                </div>
 
-  <footer class="ftco-footer">
-    <div class="container">
-      <p>&copy; 2025 Tushar Kardam. All rights reserved.</p>
-    </div>
-  </footer>
-  <script type="module" src="/src/main.js"></script>
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card-text">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="cert-meta">
+                                <h3>Database Management System</h3>
+                                <p class="cert-org">NPTEL (IIT Kharagpur)</p>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-stats">
+                                <span class="stat"><i class="fa-solid fa-trophy"></i> Elite (57%)</span>
+                                <span class="stat"><i class="fa-regular fa-calendar"></i> Jul - Sep 2023</span>
+                            </div>
+                            <p class="cert-desc">Focused on SQL queries, database design, normalization, and relational
+                                database management systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card-text">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="cert-meta">
+                                <h3>Introduction to IoT</h3>
+                                <p class="cert-org">NPTEL (IIT Kharagpur)</p>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-stats">
+                                <span class="stat"><i class="fa-solid fa-trophy"></i> Elite (67%)</span>
+                                <span class="stat"><i class="fa-regular fa-calendar"></i> Jul - Oct 2024</span>
+                            </div>
+                            <p class="cert-desc">Comprehensive study of IoT architecture, sensors, actuators, and
+                                connectivity protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card-text">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <div class="cert-meta">
+                                <h3>Cloud Computing</h3>
+                                <p class="cert-org">NPTEL (IIT Kharagpur)</p>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-stats">
+                                <span class="stat"><i class="fa-solid fa-trophy"></i> Elite (61%)</span>
+                                <span class="stat"><i class="fa-regular fa-calendar"></i> Jan - Apr 2025</span>
+                            </div>
+                            <p class="cert-desc">Covered Service Models (IaaS, PaaS, SaaS), Virtualization, AWS, Azure,
+                                and Cloud Security.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card-text">
+                        <div class="cert-header">
+                            <div class="cert-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="cert-meta">
+                                <h3>Full Stack Web Development</h3>
+                                <p class="cert-org">Apna College</p>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-stats">
+                                <span class="stat"><i class="fa-solid fa-check-circle"></i> Certified</span>
+                            </div>
+                            <p class="cert-desc">Built production-ready apps using MERN Stack (MongoDB, Express, React,
+                                Node.js) and Git.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">CONTACT</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 9012066857</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>tusharkardam711@gmail.com</p>
+                    </div>
+                    <a href="#" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect</p>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Follow</p>
+                    </a>
+                </div>
+
+                <footer class="footer">
+                    <p>&copy; 2026 Tushar Kardam. All Rights Reserved.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
