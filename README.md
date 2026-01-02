@@ -30,3 +30,4 @@ This is a modern, dark-themed portfolio website featuring glassmorphism effects,
 ## Credits
 - Fonts: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Icons: [FontAwesome](https://fontawesome.com/)
+
